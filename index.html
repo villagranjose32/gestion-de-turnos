@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gimnasio Provincial de la Secretaría de Deportes</title>
+  <meta name="description" content="Gimnasio de la Secretaría de Deportes de la Provincia de Santiago del Estero, donde transformamos tu vida." />
+  <meta name="author" content="Jose" />
+  <meta name="keywords" content="gimnasio, fitness, salud, entrenamiento, gimnasio público en Santiago del Estero" />
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+      }
+      
+      .container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px;
+      }
+
+      .titulo {
+          margin: 0;
+          flex-grow: 1;
+          text-align: center;
+      }
+
+      header {
+          background: #2478d8;
+          color: white;
+      }
+
+      nav {
+          background: #333;
+          color: white;
+          padding: 10px 0;
+      }
+
+      nav ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          justify-content: center;
+      }
+
+      nav ul li {
+          position: relative;
+          margin: 0 15px;
+      }
+
+      nav ul li a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+      }
+
+      nav ul li ul {
+          display: none;
+          position: absolute;
+          background: #333;
+          padding: 10px 0;
+          list-style: none;
+          top: 100%;
+          left: 0;
+          min-width: 200px;
+          z-index: 1000;
+      }
+
+      nav ul li:hover ul {
+          display: block;
+      }
+
+      nav ul li ul li {
+          margin: 0;
+      }
+
+      nav ul li ul li a {
+          display: block;
+          padding: 10px 20px;
+          color: white;
+          text-decoration: none;
+      }
+
+      nav ul li ul li a:hover {
+          background: #555;
+      }
+
+      section {
+          padding: 40px 20px;
+      }
+
+      h2 {
+          text-align: center;
+          margin-bottom: 20px;
+      }
+
+      .servicios {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 20px;
+      }
+
+      .servicio {
+          background: white;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          padding: 20px;
+          width: 300px;
+          text-align: center;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+
+      .galeria {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 20px;
+      }
+
+      .galeria img {
+          width: 300px;
+          border-radius: 10px;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      }
+
+      footer {
+          background: #333;
+          color: white;
+          text-align: center;
+          padding: 15px 0;
+          margin-top: 30px;
+      }
+
+      .imagen {
+          width: 120px;
+          height: auto;
+      }
+
+      @media (max-width: 768px) {
+          .container {
+              flex-direction: column;
+              align-items: center;
+          }
+
+          nav ul {
+              flex-direction: column;
+          }
+
+          .servicios, .galeria {
+              flex-direction: column;
+              align-items: center;
+          }
+
+          nav ul li ul {
+              position: static;
+          }
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+        <h1 class="titulo">Gimnasio Provincial de la Secretaría de Deportes</h1>
+        <img src="escudodelaprovincia.png" alt="Escudo de la Provincia" class="imagen">
+    </div>
+  </header>
+
+  <nav>
+      <ul>
+          <li>
+              <a href="#servicios">Servicios</a>
+              <ul>
+                  <li><a href="#clases-grupales">Clases Grupales</a></li>
+                  <li><a href="#entrenamiento-personal">Entrenamiento Personal</a></li>
+                  <li><a href="#asesoria-nutricional">Asesoría Nutricional</a></li>
+              </ul>
+          </li>
+          <li><a href="#carnet">Carnet</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="Turnos.html">Turnos</a></li>
+      </ul>
+  </nav>
+
+  <section id="servicios">
+      <h2>Servicios</h2>
+      <div class="servicios">
+          <div class="servicio" id="entrenamiento-personal">
+              <h3>Entrenamiento Personal</h3>
+              <p>Entrenadores certificados te ayudarán a alcanzar tus metas de forma personalizada.</p>
+          </div>
+          <div class="servicio" id="clases-grupales">
+              <h3>Clases Grupales</h3>
+              <p>Entrena en grupos o en circuitos dinámicos para mantenerte motivado.</p>
+          </div>
+          <div class="servicio" id="asesoria-nutricional">
+              <h3>Asesoría Nutricional</h3>
+              <p>Completa tu plan de entrenamiento con el mejor asesoramiento en alimentación saludable.</p>
+          </div>
+      </div>
+  </section>
+
+  <section id="galeria">
+      <h2>Galería de Fotos</h2>
+      <div class="galeria">
+          <div>
+              <img src="equipamiento1.PNG" alt="Equipamiento del Gimnasio">
+              <p style="text-align:center;">Equipamiento de última generación disponible para todos.</p>
+          </div>
+          <div>
+              <img src="requisitos.PNG" alt="Requisitos de ingreso">
+              <p style="text-align:center;">Consulta los requisitos para acceder al gimnasio.</p>
+          </div>
+      </div>
+  </section>
+
+  <section id="contacto">
+      <h2>Contacto</h2>
+      <p style="text-align:center;">Para más información, visita nuestras oficinas en la Secretaría de Deportes o comunícate con nosotros a través de nuestras redes sociales.</p>
+  </section>
+
+  <footer>
+      <p>&copy; 2025 Gimnasio Provincial de Santiago del Estero. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
